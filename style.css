@@ -22,13 +22,14 @@ body {
     grid-column: span 2,5;
     height: 100%;
     background-color: #363636;
+    border-radius: 30px 30px 30px 30px;
 }
 
 .right-section {
     grid-column: span 6;
     height: 100%;
     background-color: #666b67;
-    border-radius: 0px 60px 0px 0px;
+    border-radius: 30px 30px 30px 30px;
 }
 
 .left-section-content{
@@ -40,7 +41,7 @@ body {
     border-bottom: 2px solid #1B2631;
 }
 
-.profile .profile-image {
+.profile-image {
     width: 100%;
     border-radius: 50%;
     border: 8px solid #1B2631;
@@ -136,7 +137,7 @@ body {
 
 .right-title {
     color: #a1e2c4;
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -147,7 +148,7 @@ body {
 }
 
 .gap {
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
 }
 .about-me-contents {
     font-size: 18px;
@@ -156,86 +157,121 @@ body {
     color: #F1F8FD;
 }
 
+.about-me-image {
+    width: 100%;
+    align-items: center;
+    border: 8px solid #1B2631;
+}
+
+.loading-image {
+    width: 20%;
+    align-items: center;
+}
+
 .experience-contents,
 .education-contents,
 .awards-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 2rem;
     color: #F1F8FD;
 }
 
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #a1e2c4;
-    padding-bottom: .4rem;
+    padding-bottom: .2rem;
 }
 
 .exp-time-period,
-.educationp-time-period,
+.education-time-period,
 .awards-time-period {
     font-size: 18px;
     letter-spacing: 1px;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.1rem;
 }
 
 .exp-position,
 .education-subject,
 .awards-name {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #a1e2c4;
-    padding-bottom: .4rem;
+    padding-bottom: .2rem;
 }
 
 .exp-desc,
 .education-desc,
 .awards-desc {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.5rem;
-    border-left: 3px solid #a5a3a3;
-    padding-left: 5px;
+    padding-bottom: 1.1rem;
 }
 
+footer{}
+
+.footer-note {
+    color: #363636;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+summary {
+    display: block;
+    color: #a1e2c4;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+/* Alteração da aparência dos links */
 a.text:link {color:#d6dbdfaf;}
 a.text:visited {color:#d6dbdfaf;}
 a.text:hover {color:#FDB44B;}
 
-/* Media queries */
-@media screen and (max-width:780px) {
-    .experience-contents,
-    .education-contents,
-    .awards-contents {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media screen and (max-width:780px) {
-    .left-section {
-        grid-column: span 3;
-    }
-    
-    .right-section {
-        grid-column: span 4;
-    }
-    
-}
-
-@media screen and (max-width:1200px) {
+/* Media queries para site responsivo */
+/* resolução PCs */
+@media screen and (max-width:1000px) {
     .resume-contents {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media screen and (max-width:390px) {
+/* resolução tablet */
+@media screen and (max-width:780px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-section {
+        grid-column: span 3;
+    }
+    .right-section {
+        grid-column: span 4;
+    }
+}
+
+/* resolução smartphones */
+@media screen and (max-width:500px) {
     .resume-contents {
         width: 100%;
         margin: 0 auto;
