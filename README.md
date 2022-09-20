@@ -4,3 +4,4 @@
 - Versão 1.1 - Revisão geral + minha personalização do CSS
 - Versão 1.2 - Revisão geral + aplicação de configurações para site responsivo + novas features
 - Versão 1.3 - Atualização dos cargos + revisão geral da formatação
+- Versão 1.4 - Criação de múltiplas páginas + adicionado spotify 
