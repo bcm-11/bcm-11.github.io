@@ -20,12 +20,29 @@ body {
 	grid-template-columns: repeat(7, 1fr);
 }
 
+.index-resume-contents {
+	width: 80%;
+	margin: 2rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .left-section {
 	grid-column: span 2.5;
 	height: 100%;
 	background-color: #363636;
 	opacity: 0.9;
-	border-radius: 30px 30px 30px 30px;
+	border-radius: 30px 30px;
+}
+
+.index-left-section {
+	grid-column: span 2.5;
+	height: 510px;
+	width: 353.38px;
+	background-color: #363636;
+	opacity: 0.9;
+	border-radius: 30px 30px;
 }
 
 .right-section {
@@ -33,15 +50,15 @@ body {
 	height: 100%;
 	background-color: #666b67;
 	opacity: 0.9;
-	border-radius: 30px 30px 30px 30px;
+	border-radius: 30px 30px;
 }
 
 .index-right-section {
 	grid-column: span 4;
-	height: 100%;
+	height: 510px;
 	background-color: #666b67;
 	opacity: 0.9;
-	border-radius: 30px 30px 30px 30px;
+	border-radius: 30px 30px;
 }
 
 .left-section-content{
