@@ -6,3 +6,4 @@
 - Versão 1.3 - Atualização dos cargos + revisão geral da formatação
 - Versão 1.4 - Criação de múltiplas páginas + adicionado spotify 
 - Versão 1.5 - Melhorias no CSS
+- Versão 1.6 - Correção da responsividade
